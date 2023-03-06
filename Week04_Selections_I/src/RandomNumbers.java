@@ -58,38 +58,6 @@ public class RandomNumbers {
 			
 			System.out.println( value1 + "\t" + value2 + "\t" + value3);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	
 	}
 }
