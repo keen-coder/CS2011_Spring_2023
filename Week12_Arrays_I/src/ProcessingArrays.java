@@ -6,12 +6,8 @@ public class ProcessingArrays {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-
-		Random r = new Random();
+		int[] randomArray = initRandomArray(20);
 		
-		for (int i = 0 ; i < 30 ; i++) {
-			System.out.print((r.nextInt(4) + 1) + " ");
-		}
 	}
 	
 	public static void shuffleArray(int[] arr) {
@@ -67,6 +63,18 @@ public class ProcessingArrays {
 		
 		for (int i = 0 ; i < result.length ; i++) {
 			result[i] = r.nextInt(100000);
+		}
+		
+		return result;
+	}
+
+	public static int[] initRandomArray(int size, int min, int max) {
+		Random r = new Random();
+		
+		int[] result = new int[size];
+		
+		for (int i = 0 ; i < result.length ; i++) {
+			result[i] = r.nextInt(max - min + 1) + min;
 		}
 		
 		return result;
